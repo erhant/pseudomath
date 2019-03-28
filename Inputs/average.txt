@@ -1,0 +1,12 @@
+average(A[N])
+{
+    s = 0;
+    for (i = 1; i<=N; i=i+1) {
+        s = s + A[i];
+    }
+    return s / N;
+}
+
+/*
+abstract'ta da hata var raporda oku tekrar
+*/

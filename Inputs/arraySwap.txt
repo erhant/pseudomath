@@ -1,0 +1,6 @@
+arraySwap(A[N], i, j) {
+    tmp = A[i];
+    A[i] = A[j];
+    A[j] = tmp;
+    return A;
+}

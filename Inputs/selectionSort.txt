@@ -1,0 +1,16 @@
+selectionSort(A[N]){
+     for (i=0; i < N; i=i+1){
+         m = i;
+         for (j=i+1; j < N; j=j+1){
+             if (A[j] < A[m]){
+                 m = j;
+             }
+         }
+         if (i != m){
+             t = A[i];
+             A[i] = A[m];
+             A[m] = t;
+         }
+     }
+     return A;
+ }

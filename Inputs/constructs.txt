@@ -1,0 +1,15 @@
+constructs(a, b) {
+     for (i = 0; i<b; i=i+1) {
+         a = b - 1;
+     }
+     while (a < b) {
+         a = a + 1;
+     }
+     if (a < b) {
+         return a;
+     }
+     do {
+         a = a -1;
+     } while ( a >= b && a != b );
+     return b;
+ }

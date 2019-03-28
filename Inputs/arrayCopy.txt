@@ -1,0 +1,6 @@
+copy(A[N], B[N]) {
+    for (i = 1; i<=N; i=i+1) {
+        B[i] = A[i];
+    }
+    return B;
+}

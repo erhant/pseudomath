@@ -1,0 +1,191 @@
+
+\documentclass{article}
+\usepackage{listings} 
+\usepackage{color} %use color
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage[mathpazo]{flexisym}
+\usepackage{breqn} 
+\lstset{ 
+backgroundcolor=\color{white},
+basicstyle=\footnotesize, 
+breakatwhitespace=false, 
+breaklines=true, 
+captionpos=b,
+commentstyle=\color{mygreen},
+deletekeywords={...}, 
+escapeinside={\%*}{*)}, 
+extendedchars=true,
+frame=single,
+keepspaces=true,
+keywordstyle=\color{blue},
+morekeywords={*,...},
+numbers=left,
+numbersep=5pt,
+numberstyle=\tiny\color{mygray},
+rulecolor=\color{black},
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+stepnumber=1,
+stringstyle=\color{mymauve}, 
+tabsize=2,
+title=\lstname 
+}
+ 
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+ 
+\lstdefinelanguage{JavaScript}{
+keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, for, in, while, do, else, case, break},
+keywordstyle=\color{blue}\bfseries,
+ndkeywords={class, export, boolean, throw, implements, import, this},
+ndkeywordstyle=\color{darkgray}\bfseries,
+identifierstyle=\color{black},
+sensitive=false,
+comment=[l]{//},
+morecomment=[s]{/*}{*/},
+commentstyle=\color{purple}\ttfamily,
+stringstyle=\color{red}\ttfamily,
+morestring=[b]',
+morestring=[b]"
+}
+ 
+\lstset{
+language=JavaScript,
+extendedchars=true,
+basicstyle=\footnotesize\ttfamily,
+showstringspaces=false,
+showspaces=false,
+numbers=left,
+numberstyle=\footnotesize,
+numbersep=9pt,
+tabsize=2,
+breaklines=true,
+showtabs=false,
+captionpos=b
+}
+\begin{document}
+\title{AUTOMATICALLY GENERATED LATEX}
+\maketitle
+
+\subsection{INPUT CODE}
+\begin{lstlisting}
+bubbleSort(A[N])
+{
+   do
+   {
+      t = 0;
+      for (i=1; i < N-1; i = i+1)
+      {
+         if (A[i] > A[i+1])
+         {
+            x = A[i];
+            A[i] = A[i+1];
+            A[i+1] = x;
+            t = 1;
+         }
+      }
+   }
+   while (t == 1);
+   return A;
+}
+
+\end{lstlisting}
+
+\subsection{CONVERTED LINES}
+\begin{dmath*}
+bubbleSort\left( A[N]\right)  = L_{2}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{2}\left( A,N,t,i,x\right)  = L_{3}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{3}\left( A,N,t,i,x\right)  = L_{4}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{4}\left( A,N,t,i,x\right)  = L_{5}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{5}\left( A,N,t,i,x\right)  = L_{6}\left( A,N,0,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{6}\left( A,N,t,i,x\right)  = F_{1}\left( A,N,t,1,x\right) 
+\end{dmath*}
+\begin{dmath*}
+F_{1}\left( A,N,t,i,x\right)  = \Delta_{i < N-1}\left( L_{7}\left( A,N,t,i,x\right) ,L_{16}\left( A,N,t,i,x\right) \right) 
+\end{dmath*}
+\begin{dmath*}
+L_{7}\left( A,N,t,i,x\right)  = L_{8}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{8}\left( A,N,t,i,x\right)  = \Delta_{A_{i} > A_{i+1}}\left( L_{9}\left( A,N,t,i,x\right) ,L_{14}\left( A,N,t,i,x\right) \right) 
+\end{dmath*}
+\begin{dmath*}
+L_{9}\left( A,N,t,i,x\right)  = L_{10}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{10}\left( A,N,t,i,x\right)  = L_{11}\left( A,N,t,i,A_{i}\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{11}\left( A,N,t,i,x\right)  = L_{12}\left(  |A + \delta_{N}\left( i\right) \left( A_{i+1} - A_{i}\right) | ,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{12}\left( A,N,t,i,x\right)  = L_{13}\left(  |A + \delta_{N}\left( i+1\right) \left( x - A_{i+1}\right) | ,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{13}\left( A,N,t,i,x\right)  = L_{14}\left( A,N,1,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{14}\left( A,N,t,i,x\right)  = L_{15}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{15}\left( A,N,t,i,x\right)  = F_{1}\left( A,N,t,i+1,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{16}\left( A,N,t,i,x\right)  = L_{17}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+L_{17}\left( A,N,t,i,x\right)  = W_{1}\left( A,N,t,i,x\right) 
+\end{dmath*}
+\begin{dmath*}
+W_{1}\left( A,N,t,i,x\right)  = \Delta_{t == 1}\left( L_{3}\left( A,N,t,i,x\right) ,L_{18}\left( A,N,t,i,x\right) \right) 
+\end{dmath*}
+\begin{dmath*}
+L_{18}\left( A,N,t,i,x\right)  = A
+\end{dmath*}
+\begin{dmath*}
+L_{19}\left( A,N,t,i,x\right)  = \infty
+\end{dmath*}
+
+
+\subsection{SQUISHED LINES}
+\begin{dmath*}
+bubbleSort\left( A[N]\right)  = F_{1}\left( A,N,0,1,x\right) 
+\end{dmath*}
+\begin{dmath*}
+F_{1}\left( A,N,t,i,x\right)  = \Delta_{i < N-1}\left( \Delta_{A_{i} > A_{i+1}}\left( F_{1}\left(  | |A + \delta_{N}\left( i\right) \left( A_{i+1} -  |A + \delta_{N}\left( i\right) \left( A_{i+1} - A_{i}\right) | _{i}\right) |  + \delta_{N}\left( i+1\right) \left( A_{i} - A_{i+1}\right) | ,N,1,i+1,A_{i}\right) ,F_{1}\left( A,N,t,i+1,x\right) \right) ,W_{1}\left( A,N,t,i,x\right) \right) 
+\end{dmath*}
+\begin{dmath*}
+W_{1}\left( A,N,t,i,x\right)  = \Delta_{t == 1}\left( F_{1}\left( A,N,0,1,x\right) ,A\right) 
+\end{dmath*}
+
+
+\subsection{CONVERTED CODE}
+\begin{lstlisting}
+function bubbleSort(A[N]) {
+    return F1(A,N,0,1,x);
+}
+function F1(A,N,t,i,x) {
+    return (i < N-1) ? (A_{i} > A_{i+1}) ? F1( | |A + \delta_{N}(i)(A_{i+1} -  |A + \delta_{N}(i)(A_{i+1} - A_{i})| _{i})|  + \delta_{N}(i+1)(A_{i} - A_{i+1})| ,N,1,i+1,A_{i}) : F1(A,N,t,i+1,x) : W1(A,N,t,i,x);
+}
+function W1(A,N,t,i,x) {
+    return (t == 1) ? F1(A,N,0,1,x) : A;
+}
+
+\end{lstlisting}
+
+\end{document}

@@ -1,0 +1,8 @@
+operations() {
+    a = div(2, 3) - div(3, 2);
+    b = pow(2, 3) + floor(5.6);
+    c = abs(-6);
+    d = sqrt(16) - ceil(2.993);
+    e = root(16, 4);
+    return a + b - c * d - e;
+}
