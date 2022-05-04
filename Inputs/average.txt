@@ -6,7 +6,3 @@ average(A[N])
     }
     return s / N;
 }
-
-/*
-abstract'ta da hata var raporda oku tekrar
-*/
